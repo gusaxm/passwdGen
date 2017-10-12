@@ -9,7 +9,7 @@ int main()
     srand(time(0));
     int i;
     char again[WORDLENGTH]="yes";
-    printf(" Random passphrase number generator v1.0\n");
+    printf("-----Random passphrase number generator v1.0-----\n");
     while(strcmp(again,"yes")==0 || strcmp(again,"y")==0)
     {
         printf(" Passphrase: ");
@@ -32,4 +32,24 @@ void throwDiceAndPrint()
         printf("%d",passphraseNr[i]);
     }
     printf(" ");
+}
+void readFromFile()
+{
+  //nevermind...
+  /*
+    FILE=fopen(passwords,"r");
+    if(fp!=NULL)
+    {
+        char word[15];
+        printf("%d\n",exisitingSpheres);
+        int i=0;
+        while(i<5)
+        {
+            fscanf(fp,"%s",tmp);
+            word=atof(tmp);
+            i++;
+        }
+        fclose(fp);
+    }
+    */
 }
