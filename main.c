@@ -1,7 +1,34 @@
 #include <stdio.h>
-
+#include <stdlib.h>
+#include <time.h>
+#define WORDLENGTH 10
+            //Random passphrase generator created by Gustav
 int main()
 {
-  printf ("Hello World!");
-  return(0);
+    srand(time(0));
+    int i;
+    char again[WORDLENGTH]="yes";
+    printf(" Random passphrase number generator v1.0\n");
+    while(strcmp(again,"yes")==0 || strcmp(again,"y")==0)
+    {
+        printf(" Passphrase: ");
+        for(i=0;i<6;i++){throwDiceAndPrint();}
+        printf("\n Another passphrase? yes/no:");
+        gets(again);
+    }
+    return 0;
+}
+void throwDiceAndPrint()
+{
+    int i,diceThrow,nrOfThrows=5,passphraseNr[5];
+    for(i=0;i<nrOfThrows;i++)       //Throw dice
+    {
+        diceThrow=rand()%6+1;
+        passphraseNr[i]=diceThrow;
+    }
+    for(i=0;i<nrOfThrows;i++)
+    {
+        printf("%d",passphraseNr[i]);
+    }
+    printf(" ");
 }
