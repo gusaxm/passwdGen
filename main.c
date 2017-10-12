@@ -33,3 +33,20 @@ void throwDiceAndPrint()
     }
     printf(" ");
 }
+void readFromFile()
+{
+    FILE=fopen(passwords,"r");
+    if(fp!=NULL)
+    {
+        char word[15];
+        printf("%d\n",exisitingSpheres);
+        int i=0;
+        while(i<5)
+        {
+            fscanf(fp,"%s",tmp);
+            word=atof(tmp);
+            i++;
+        }
+        fclose(fp);
+    }
+}
