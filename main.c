@@ -35,6 +35,8 @@ void throwDiceAndPrint()
 }
 void readFromFile()
 {
+  //nevermind...
+  /*
     FILE=fopen(passwords,"r");
     if(fp!=NULL)
     {
@@ -49,4 +51,5 @@ void readFromFile()
         }
         fclose(fp);
     }
+    */
 }
