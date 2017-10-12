@@ -9,7 +9,7 @@ int main()
     srand(time(0));
     int i;
     char again[WORDLENGTH]="yes";
-    printf(" Random passphrase number generator v1.0\n");
+    printf("-----Random passphrase number generator v1.0-----\n");
     while(strcmp(again,"yes")==0 || strcmp(again,"y")==0)
     {
         printf(" Passphrase: ");
