@@ -1,8 +1,9 @@
+//Random passphrase generator created by gustavax
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 #define WORDLENGTH 10
-            //Random passphrase generator created by Gustav
+
 int main()
 {
     srand(time(0));
